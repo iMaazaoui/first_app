@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+ruby '2.1.1'
+#ruby-gemset=railstutorial_rails_4_0
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
@@ -7,13 +9,18 @@ group :developpement do
 	gem 'sqlite3', '1.3.9'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-	gem 'sass-rails', '4.0.3'
-	gem 'coffee-rails', '4.0.1'
-	
-	gem 'uglifier', '2.5.0'
+gem 'sass-rails', '4.0.3'
+gem 'uglifier', '2.5.0'
+gem 'coffee-rails', '4.0.1'
+gem 'jquery-rails', '3.1.0'
+gem 'turbolinks', '1.1.1'
+gem 'jbuilder', '1.0.2'
+
+group :doc do
+  gem 'sdoc', '0.3.20', require: false
 end
 
-gem 'jquery-rails', '3.1.0'  
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
