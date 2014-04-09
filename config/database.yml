@@ -8,6 +8,9 @@ development:
   database: db/dev_db_pg
   pool: 5
   timeout: 5000
+  encoding: unicode
+  username: kurama 
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,9 +20,14 @@ test:
   database: db/test_db_pg
   pool: 5
   timeout: 5000
+  username: kurama 
+  password: 
+
 
 production:
   adapter: postgresql
   database: db/prod_db_pg
   pool: 5
   timeout: 5000
+  username: kurama 
+  password: 
